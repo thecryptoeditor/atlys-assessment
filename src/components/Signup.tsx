@@ -1,17 +1,22 @@
-const Login = () => {
+const Signup = () => {
     return (
         <div className="min-h-screen flex items-center justify-center bg-gray-900">
             <div className="bg-gray-800 p-8 rounded-lg">
-
                 <h2 
                     className="text-2xl text-white mb-4"
                 >
-                    Log into your account
+                    Create an account to continue
                 </h2>
 
                 <input 
+                    type="email" 
+                    placeholder="Email" 
+                    className="w-full p-2 mb-4 bg-gray-700 text-white rounded" 
+                />
+                
+                <input 
                     type="text" 
-                    placeholder="Email or Username" 
+                    placeholder="Username" 
                     className="w-full p-2 mb-4 bg-gray-700 text-white rounded" 
                 />
 
@@ -24,16 +29,16 @@ const Login = () => {
                 <button 
                     className="w-full p-2 bg-blue-500 text-white rounded"
                 >
-                    Login now
+                    Continue
                 </button>
 
                 <div className="mt-4 text-gray-400">
-                    Not registered yet? 
+                    Already have an account? 
                     <a 
-                        href="/signup" 
+                        href="/login" 
                         className="text-blue-400"
                     >
-                        Register
+                        Login
                     </a>
                 </div>
 
@@ -42,4 +47,4 @@ const Login = () => {
     );
 };
 
-export default Login;
+export default Signup;
